@@ -26,7 +26,6 @@ By default it assumes that your machine has two webcams. As a result, it will tr
 
 # Running
 
-
 ## Training NEAT Agent
 
 There are 2 different components to set this training process.

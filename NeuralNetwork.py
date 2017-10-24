@@ -4,6 +4,7 @@ import numpy as np
 import requests
 import json
 import time
+import visualize
 
 # --------
 # CONSTANT
@@ -37,6 +38,7 @@ p = neat.Checkpointer.restore_checkpoint('./data/from_tung/neat-checkpoint-' + s
 genome_list = list(iteritems(p.population))
 _, genome = genome_list[CHOSEN_GENOME]
 current_net = neat.nn.FeedForwardNetwork.create(genome, p.config)
+visualize.draw_net(p.config, genome, filename="Generation_" + str(CHOSEN_GEN) + "_Genome_" + str(CHOSEN_GENOME), fmt="pdf")
 
 # --------------
 # NEURAL NETWORK

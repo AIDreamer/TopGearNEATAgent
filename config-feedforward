@@ -1,4 +1,4 @@
-#--- parameters for the XOR-2 experiment ---#
+#--- parameters for the Top Gear evolution ---#
 
 [NEAT]
 fitness_criterion     = max
@@ -39,7 +39,7 @@ enabled_default         = True
 enabled_mutate_rate     = 0.01
 
 feed_forward            = True
-initial_connection      = full
+initial_connection      = unconnected
 
 # node add/remove rates
 node_add_prob           = 0.2
